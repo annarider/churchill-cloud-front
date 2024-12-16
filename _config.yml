@@ -1,9 +1,16 @@
+# Site settings
 title: Churchill Cloud
 email: contact@churchillcloud.com
 description: >-
   Full featured cloud with privacy as a priority. Churchill Cloud—secured by Cryptogray™
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # your site's domain
+
+# URLs - keep blank for both local development and Netlify
+url: ""
+baseurl: ""
+
+# For production (uncomment when deploying to churchillcloud.com):
+# url: "https://churchillcloud.com"
+# baseurl: ""
 
 # Build settings
 markdown: kramdown
@@ -11,9 +18,20 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Exclude from processing
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Include/Exclude settings
+include:
+  - _pages
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
+  - README.md
+  - .gitignore
