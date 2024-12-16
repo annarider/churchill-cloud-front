@@ -11,7 +11,8 @@
     {% if page.additional_css %} {{ page.additional_css }} {% endif %}
   </head>
   <body>
-    {% include header.html %} {{ content }} {% include footer.html %} {% if
-    page.additional_js %} {{ page.additional_js }} {% endif %}
+    {% include header.html %} {{ content }} {% include try-it-now-cta.html %} {%
+    include footer.html %} {% if page.additional_js %} {{ page.additional_js }}
+    {% endif %}
   </body>
 </html>
