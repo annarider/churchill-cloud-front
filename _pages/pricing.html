@@ -1,81 +1,205 @@
 ---
 layout: default
 title: Pricing
-permalink: /pricing/
 ---
 
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-4xl text-center">
       <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
-      <p
-        class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
-      >
-        Simple, straightforward and upfront.
+      <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Simple, straightforward and upfront.
       </p>
     </div>
-    <p
-      class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600"
-    >
-      Our pricing model is easy to understand, tiered and compatible with other
-      providers. What you see is what you pay.
-    </p>
-
-    <!-- Pricing tiers - keeping the same structure -->
-    <div
-      class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
-    >
-      <!-- Compute tier -->
+    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Our pricing model is easy to understand, tiered and compatible with other providers. What you see is what you pay.</p>
+    <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
-        <!-- Content remains the same -->
+        <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">Compute</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-600">Scalable VM compute instances</p>
+        <p class="mt-6 flex items-baseline gap-x-1">
+          <!-- Price, update based on frequency toggle state -->
+          <span class="text-4xl font-bold tracking-tight text-gray-900">$5</span>
+          <!-- Payment frequency, update based on frequency toggle state -->
+          <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+        </p>
+        <a href="https://my.churchillcloud.com" aria-describedby="tier-freelancer"
+          class="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+          Started</a>
+        <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Scalable Tiers
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Upgrade CPU & RAM Anytime
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            EC2 Compatible API
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Incrementally Billed
+          </li>
+        </ul>
       </div>
-
-      <!-- Database tier -->
       <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
-        <!-- Content remains the same -->
+        <h3 id="tier-startup" class="text-lg font-semibold leading-8 text-gray-900">Database</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-600">Replicated PostgreSQL databases</p>
+        <p class="mt-6 flex items-baseline gap-x-1">
+          <!-- Price, update based on frequency toggle state -->
+          <span class="text-4xl font-bold tracking-tight text-gray-900">$30</span>
+          <!-- Payment frequency, update based on frequency toggle state -->
+          <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+        </p>
+        <a href="https://my.churchillcloud.com" aria-describedby="tier-startup"
+          class="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get Started</a>
+        <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Support multiple versions of PosgreSQL
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Automatic backups
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Replicated and scalable
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Pay as you go pricing
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Connection pooling with pgbouncer
+          </li>
+        </ul>
       </div>
-
-      <!-- Object Storage tier -->
       <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
-        <!-- Content remains the same -->
+        <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">Object Storage</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-600">Easy to use object storage buckets</p>
+        <p class="mt-6 flex items-baseline gap-x-1">
+          <!-- Price, update based on frequency toggle state -->
+          <span class="text-4xl font-bold tracking-tight text-gray-900">$20</span>
+          <!-- Payment frequency, update based on frequency toggle state -->
+          <span class="text-sm font-semibold leading-6 text-gray-600">/TB</span>
+        </p>
+        <a href="https://my.churchillcloud.com" aria-describedby="tier-freelancer"
+          class="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+          Started</a>
+        <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            S3 API Compliant
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Durable storage with redundant disks
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            All data encrypted at rest
+          </li>
+          <li class="flex gap-x-3">
+            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                clip-rule="evenodd" />
+            </svg>
+            Pay what you use
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Trial credit section -->
+<!-- Trial credit -->
 <section class="w-full pt-24 pb-32 bg-white">
   <div class="relative px-12 mx-auto max-w-7xl">
     <div
       class="relative grid items-center grid-cols-1 gap-10 p-12 overflow-hidden shadow-2xl md:p-16 lg:p-20 xl:p-24 rounded-2xl md:grid-cols-5 lg:gap-0 from-cyan-800 to-rose-800 bg-gradient-to-br"
-    >
-      <!-- SVG elements remain the same -->
-
+      data-primary="green-400" data-rounded="rounded-2xl" data-rounded-max="rounded-full">
+      <div class="absolute top-0 right-0">
+        <svg class="object-cover w-full h-full" viewBox="0 0 487 487" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z"
+            fill="#FFF" fill-opacity=".1" fill-rule="nonzero" />
+        </svg>
+      </div>
+      <div class="absolute bottom-0 left-0 h-full">
+        <svg class="w-auto h-full opacity-75 object-stretch" viewBox="0 0 487 487" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z"
+            fill="#FFF" fill-opacity=".1" fill-rule="nonzero" />
+        </svg>
+      </div>
       <div class="relative z-30 col-span-1 md:col-span-3">
-        <h2
-          class="mb-1 text-3xl font-bold leading-tight text-white md:mb-3 md:text-3xl lg:text-4xl xl:text-5xl"
-        >
+        <h2 class="mb-1 text-3xl font-bold leading-tight text-white md:mb-3 md:text-3xl lg:text-4xl xl:text-5xl">
           <span class="block lg:mt-3">Try us risk-free</span>
         </h2>
-        <p
-          class="max-w-sm my-6 text-base font-normal xl:max-w-lg lg:pr-0 pr-7 lg:text-xl text-white"
-        >
-          Are you ready to make the move? Apply for a $200 credit and tell us
-          your story.
+        <p class="max-w-sm my-6 text-base font-normal xl:max-w-lg lg:pr-0 pr-7 lg:text-xl text-white"
+          data-primary="green-400">
+          Are you ready to make the move? Apply for a $200 credit and tell us your story.
         </p>
-        <a
-          class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm md:w-auto md:inline-flex hover:bg-transparent hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"
-          href="https://my.churchillcloud.com/"
-        >
+        <a class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm md:w-auto md:inline-flex hover:bg-transparent hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"
+          data-primary="green-400" data-rounded="rounded-full" href="https://my.churchillcloud.com/">
           Get Started
         </a>
       </div>
       <div class="flex items-center h-full col-span-1 md:col-span-2">
-        <img
-          src="{{ site.baseurl }}/assets/images/churchill-1.webp"
-          alt="Dashboard"
+        <img alt="Dashboard"
           class="relative top-0 right-0 object-cover w-full -mr-1 rounded md:max-w-sm md:w-auto max-w-none lg:absolute lg:max-w-md xl:max-w-lg lg:mt-9"
-        />
+          src="/assets/images/churchill-1.webp" >
       </div>
     </div>
   </div>
