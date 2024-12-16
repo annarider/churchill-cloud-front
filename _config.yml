@@ -28,6 +28,10 @@ collections:
 include:
   - _pages
 
+# Directory settings
+source: .
+layouts_dir: _layouts
+
 exclude:
   - Gemfile
   - Gemfile.lock
