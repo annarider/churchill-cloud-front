@@ -1,8 +1,50 @@
+# Jekyll files
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+
+# Common ignore
 vendor
-layout.html
+
+# Phoenix/Elixir files 
 *.html.heex
+layout.html
+
+# Python tools
 *.py
+
+# Node.js files
+node_modules
+node_modules/*
+
+# Environment files
+.env
+.env.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build output
+dist/
+public/
+
+# Tailwind specific
+tailwind.output.css
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: Package manager files
+package-lock.json
+yarn.lock
