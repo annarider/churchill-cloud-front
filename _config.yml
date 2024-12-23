@@ -23,10 +23,11 @@ collections:
   pages:
     output: true
     permalink: /:path/
+    layout: default
 
 # Include/Exclude settings
 include:
-  - _pages
+  - ./_pages
 
 # Directory settings
 source: .
