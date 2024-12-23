@@ -32,11 +32,15 @@
 
         {% if cta_text and cta_link %}
           <!-- CTA button -->
-          <div class="mx-auto mt-8 w-full max-w-lg lg:mx-0">
+          <div class="mx-auto mt-8 w-full max-w-lg shadow-lg lg:mx-0">
             <div class="flex justify-center lg:justify-start">
               <a
                 href="{{ cta_link }}"
-                class="transform rounded-lg bg-secondary px-6 py-3 text-lg font-bold text-primary-dark shadow-lg transition duration-200 hover:bg-secondary-light hover:text-primary focus:ring-2 focus:ring-secondary/50"
+                class="
+                  transform rounded-lg bg-secondary px-6 py-3 text-lg font-bold text-primary-dark
+                  shadow-lg transition-all duration-200 hover:shadow-xl
+                  hover:brightness-110
+                "
                 aria-label="{{ cta_text }}"
               >
                 {{ cta_text }}
