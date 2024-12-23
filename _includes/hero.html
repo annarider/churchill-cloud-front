@@ -1,0 +1,87 @@
+<!-- _includes/hero.html -->
+{% assign title = include.title %}
+{% assign subtitle = include.subtitle | default: null %}
+{% assign description = include.description | default: null %}
+{% assign cta_text = include.cta_text | default: null %}
+{% assign cta_link = include.cta_link | default: null %}
+{% assign show_stats = include.show_stats | default: false %}
+
+<section class="relative h-auto w-full overflow-hidden bg-primary-dark py-8 sm:py-12 md:py-20 lg:py-32">
+  <!-- Background gradient overlay -->
+  <div class="from-primary-default/95 to-primary-dark/98 absolute inset-0 h-full w-full bg-gradient-to-r"></div>
+
+  <!-- Content container -->
+  <div class="relative mx-auto flex h-full max-w-7xl flex-col justify-start px-4 sm:px-6 lg:flex-row lg:px-8">
+    <!-- Text Content Side -->
+    <div class="relative z-10 h-full w-full lg:w-1/2 xl:pr-12 2xl:pr-24">
+      <div class="flex h-full flex-col items-start justify-center">
+        <h1 class="mx-auto max-w-lg text-center text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-center lg:text-4xl">
+          <span class="to-secondary-default bg-gradient-to-bl from-primary-light bg-clip-text text-transparent">
+            {{ title }}
+          </span>
+        </h1>
+
+        {% if description %}
+          <p class="mx-auto mt-4 max-w-md text-center text-white/90 lg:mx-0 lg:text-left">
+            {{ description }}
+          </p>
+        {% endif %}
+
+        {% if cta_text and cta_link %}
+          <div class="mx-auto mt-6 w-full max-w-lg lg:mx-0 lg:mt-12">
+            <div class="flex justify-center lg:justify-start">
+              <a
+                href="{{ cta_link }}"
+                class="hover:bg-primary-default transform rounded-lg bg-primary-light px-4 py-3 text-sm font-bold tracking-tight text-white shadow-lg transition duration-200 focus:ring-2 focus:ring-primary-light/50 sm:px-6 sm:text-lg"
+                aria-label="{{ cta_text }}"
+              >
+                {{ cta_text }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if show_stats %}
+          <div class="mx-auto mt-6 w-full max-w-lg lg:mx-0">
+            <div class="hidden grid-cols-3 gap-8 sm:grid">
+              <div class="col-span-1 text-center lg:text-left">
+                <h4 class="to-secondary-default bg-gradient-to-l from-primary-light bg-clip-text text-3xl font-bold tracking-tight text-transparent lg:text-4xl">
+                  20+
+                </h4>
+                <p class="text-sm font-semibold text-white/80">years experience</p>
+              </div>
+              <div class="col-span-1 text-center lg:text-left">
+                <h4 class="to-secondary-default bg-gradient-to-l from-primary-light bg-clip-text text-3xl font-bold tracking-tight text-transparent lg:text-4xl">
+                  99.999
+                </h4>
+                <p class="text-sm font-semibold text-white/80">Uptime SLA</p>
+              </div>
+              <div class="col-span-1 text-center lg:text-left">
+                <h4
+                  class="to-secondary-default bg-gradient-to-l from-primary-light bg-clip-text text-3xl font-bold tracking-tight text-transparent lg:text-4xl"
+                ></h4>
+                <p class="text-sm font-semibold text-white/80"></p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Logo Side -->
+    <div class="group relative z-10 mt-16 h-full w-full px-4 pb-32 sm:px-6 lg:mt-0 lg:w-1/2 lg:px-8 lg:pb-0">
+      <div class="relative flex h-full w-full justify-center">
+        <div class="relative h-auto w-full md:h-full lg:h-auto">
+          <div class="relative mx-auto h-auto w-full max-w-lg transform overflow-hidden rounded-xl transition duration-300 group-hover:scale-95">
+            <img
+              alt="Churchill Cloud logo in color with text in white"
+              class="w-full"
+              src="/assets/images/churchillcloud-logo-color-text-white.svg"
+              aria-label="Churchill Cloud Logo"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
