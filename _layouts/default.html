@@ -7,7 +7,7 @@
       {{ page.title }}
       - Churchill Cloud
     </title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     {% if page.additional_css %} {{ page.additional_css }} {% endif %}
   </head>
   <body>
