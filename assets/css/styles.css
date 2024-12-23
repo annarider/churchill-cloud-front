@@ -1575,6 +1575,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-primary\/95 {
+  --tw-gradient-from: rgb(0 92 171 / 0.95) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 92 171 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-black {
   --tw-gradient-to: #000 var(--tw-gradient-to-position);
 }
