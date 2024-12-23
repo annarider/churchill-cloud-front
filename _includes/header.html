@@ -1,20 +1,13 @@
 <!-- Nav Bar -->
-<header class="bg-white z-50 relative">
+<header class="relative z-50 bg-white">
   <nav
     class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
     aria-label="Global"
   >
     <div class="flex flex-1">
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Products</a
-        >
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-          >Developers</a
-        >
-        <a href="/about/" class="text-sm font-semibold leading-6 text-gray-900"
-          >Company</a
-        >
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Sign up</a>
+        <a href="/about/" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
         <a
           href="/pricing/"
           class="text-sm font-semibold leading-6 text-gray-900"
@@ -22,7 +15,11 @@
         >
       </div>
       <div class="flex lg:hidden">
-        <button type="button" aria-label="Global" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <button
+          type="button"
+          aria-label="Global"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        >
           <span class="sr-only">Open main menu</span>
           <svg
             class="h-6 w-6"
@@ -47,7 +44,7 @@
         class="h-16 w-auto"
         src="/assets/images/churchillcloud-logo-color.svg"
         alt="Churchill Cloud logo"
-      />
+      >
     </a>
     <div class="flex flex-1 justify-end">
       <a
@@ -58,10 +55,10 @@
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-   <div class="hidden lg:hidden" role="dialog" aria-modal="true">
+  <div class="hidden lg:hidden" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-10 hidden"></div>    
-    <div class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 max-h-screen">
+    <div class="fixed inset-0 z-10 hidden"></div>
+    <div class="fixed inset-y-0 left-0 z-10 max-h-screen w-full overflow-y-auto bg-white px-6 py-6">
       <div class="flex items-center justify-between">
         <div class="flex flex-1">
           <button type="button" aria-label="Close menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
