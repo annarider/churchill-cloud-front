@@ -1,5 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+    "./_includes/**/*.{html,liquid}", // Jekyll includes
+    "./_layouts/**/*.{html,liquid}", // Jekyll layouts
+    "./_pages/**/*.{html,liquid}", // Jekyll pages
+    "./*.{html,liquid,md}", // Root files
+    "./**/*.{html,liquid,md}", // All other template files
+  ],
   theme: {
     extend: {
       colors: {
