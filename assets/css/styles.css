@@ -1704,6 +1704,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-primary {
+  --tw-gradient-from: #005CAB var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 92 171 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-accent {
+  --tw-gradient-from: #00B0A3 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 176 163 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-primary-light {
   --tw-gradient-to: rgb(0 174 239 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #00AEEF var(--tw-gradient-via-position), var(--tw-gradient-to);
