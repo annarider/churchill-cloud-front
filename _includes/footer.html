@@ -8,22 +8,20 @@
       <div
         class="mt-20 grid w-full grid-cols-2 gap-y-16 sm:grid-cols-4 md:mt-0 md:w-5/6 md:pr-6 lg:gap-x-8"
       >
-        <div class="md:justify-self-end">
-          <h3 class="font-semibold text-black">About</h3>
-        </div>
-        <div class="md:justify-self-end">
-          <h3 class="font-semibold text-black">Pricing</h3>
-        </div>
-        <!--
-          <div class="md:justify-self-end">
-            <h3 class="font-semibold text-black">Resources</h3>
-          </div>
-        -->
-        <div class="md:justify-self-end">
-          <h3 class="font-semibold text-black">Contact</h3>
-        </div>
+      <div class="md:justify-self-end">
+        <h3 class="font-semibold text-black">
+          <a href="{{ '/about/' | relative_url }}" class="text-gray-700 hover:text-black">About</a>
+        </h3>
+      </div>      
+      <div class="md:justify-self-end">
+        <h3 class="font-semibold text-black">
+          <a href="{{ '/pricing/' | relative_url }}" class="text-gray-700 hover:text-black">Pricing</a>
+        </h3>
+      </div>   <div class="md:justify-self-end">
+        <h3 class="font-semibold text-black">
+          <a href="{{ '/contact/' | relative_url }}" class="text-gray-700 hover:text-black">Contact</a>
+        </h3>
       </div>
-    </div>
 
     <div
       class="border-gray flex flex-col items-center justify-between border-t border-solid py-10 lg:flex-row"
@@ -31,30 +29,10 @@
       <ul class="flex flex-wrap space-x-5 text-xs">
         <li class="flex-full mb-6 text-center lg:mb-0 lg:flex-none">&copy; 2025 Churchill Cloud</li>
         <li class="lg:ml-6">
-          <a href="#_" class="group relative inline-block text-black">
-            <span
-              class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-            ></span>
-            <span>Privacy Policy</span>
-          </a>
-        </li>
+          <li><a href="{{ '/privacy/' | relative_url }}" class="group relative inline-block text-black">Privacy Policy</a></li>
         <li class="ml-auto mr-auto text-center lg:ml-6 lg:mr-0">
-          <a href="#_" class="group relative inline-block text-black">
-            <span
-              class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-            ></span>
-            <span>Disclaimers</span>
-          </a>
-        </li>
-        <li class="lg:ml-6">
-          <a href="#_" class="group relative inline-block text-black">
-            <span
-              class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-            ></span>
-            <span>Terms and Conditions</span>
-          </a>
-        </li>
-      </ul>
+          <li><a href="{{ '/disclaimers/' | relative_url }}" class="group relative inline-block text-black">Disclaimers</a></li>
+          <li><a href="{{ '/terms/' | relative_url }}" class="group relative inline-block text-black">Terms and Conditions</a></li>      </ul>
     </div>
   </div>
 </footer>
