@@ -7,12 +7,8 @@
     <div class="flex flex-1">
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Sign up</a>
-        <a href="/about/" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
-        <a
-          href="/pricing/"
-          class="text-sm font-semibold leading-6 text-gray-900"
-          >Pricing</a
-        >
+        <a href="{{ '/about/' | relative_url }}" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+        <a href="{{ '/pricing/' | relative_url }}" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
       </div>
       <div class="flex lg:hidden">
         <button
@@ -47,11 +43,9 @@
       >
     </a>
     <div class="flex flex-1 justify-end">
-      <a
-        href="https://my.churchillcloud.com/"
-        class="text-sm font-semibold leading-6 text-gray-900"
-        >Log in <span aria-hidden="true">&rarr;</span></a
-      >
+      <a href="https://my.churchillcloud.com/" class="text-sm font-semibold leading-6 text-gray-900">
+        Log in <span aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
@@ -83,31 +77,26 @@
           <span class="sr-only">Churchill Cloud</span>
         </a>
         <div class="flex flex-1 justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-            >Log in <span aria-hidden="true">&rarr;</span></a
-          >
+          <a href="https://my.churchillcloud.com/" class="text-sm font-semibold leading-6 text-gray-900">
+            Log in <span aria-hidden="true">&rarr;</span>
+          </a>
         </div>
       </div>
       <div class="mt-6 space-y-2">
         <a
-          href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-          >Products</a
-        >
-        <a
-          href="#"
-          class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-          >Developers</a
-        >
-        <a
-          href="/about/"
+          href="{{ '/about/' | relative_url }}"
           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
           >Company</a
         >
         <a
-          href="/pricing/"
+          href="{{ '/pricing/' | relative_url }}"
           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
           >Pricing</a
+        >
+        <a
+          href="{{ '/contact/' | relative_url }}"
+          class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+          >Contact</a
         >
       </div>
     </div>
