@@ -2544,6 +2544,11 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 92 171 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -2595,9 +2600,19 @@ video {
   border-color: rgb(251 176 64 / var(--tw-border-opacity, 1));
 }
 
+.focus\:border-primary-dark:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 4 55 / var(--tw-border-opacity, 1));
+}
+
 .focus\:bg-blue-700:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
+}
+
+.focus\:bg-primary:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 92 171 / var(--tw-bg-opacity, 1));
 }
 
 .focus\:text-white:focus {
