@@ -1496,6 +1496,10 @@ video {
   border-color: transparent;
 }
 
+.border-primary-dark\/30 {
+  border-color: rgb(0 4 55 / 0.3);
+}
+
 .bg-\[\#000437\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 4 55 / var(--tw-bg-opacity, 1));
@@ -1815,6 +1819,10 @@ video {
 
 .to-primary-dark {
   --tw-gradient-to: #000437 var(--tw-gradient-to-position);
+}
+
+.to-primary-light {
+  --tw-gradient-to: #00AEEF var(--tw-gradient-to-position);
 }
 
 .decoration-slice {
@@ -2582,6 +2590,11 @@ video {
   border-color: rgb(30 64 175 / var(--tw-border-opacity, 1));
 }
 
+.focus\:border-secondary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 176 64 / var(--tw-border-opacity, 1));
+}
+
 .focus\:bg-blue-700:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
@@ -2619,6 +2632,11 @@ video {
 
 .focus\:ring-secondary\/50:focus {
   --tw-ring-color: rgb(251 176 64 / 0.5);
+}
+
+.focus\:ring-secondary:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(251 176 64 / var(--tw-ring-opacity, 1));
 }
 
 .focus\:ring-offset-2:focus {
