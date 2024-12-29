@@ -1173,6 +1173,10 @@ video {
   align-content: normal;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .content-baseline {
   align-content: baseline;
 }
@@ -1325,6 +1329,10 @@ video {
 
 .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .self-baseline {
@@ -1716,6 +1724,36 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-primary-light\/20 {
+  --tw-gradient-from: rgb(0 174 239 / 0.2) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 174 239 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary-light\/40 {
+  --tw-gradient-from: rgb(0 174 239 / 0.4) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 174 239 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary-light\/90 {
+  --tw-gradient-from: rgb(0 174 239 / 0.9) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 174 239 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary\/70 {
+  --tw-gradient-from: rgb(0 92 171 / 0.7) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 92 171 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary\/55 {
+  --tw-gradient-from: rgb(0 92 171 / 0.55) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 92 171 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-primary-light {
   --tw-gradient-to: rgb(0 174 239 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #00AEEF var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -1759,6 +1797,18 @@ video {
 
 .to-primary-dark\/90 {
   --tw-gradient-to: rgb(0 4 55 / 0.9) var(--tw-gradient-to-position);
+}
+
+.to-primary-dark\/20 {
+  --tw-gradient-to: rgb(0 4 55 / 0.2) var(--tw-gradient-to-position);
+}
+
+.to-primary-dark\/40 {
+  --tw-gradient-to: rgb(0 4 55 / 0.4) var(--tw-gradient-to-position);
+}
+
+.to-primary-dark {
+  --tw-gradient-to: #000437 var(--tw-gradient-to-position);
 }
 
 .decoration-slice {
@@ -2240,6 +2290,11 @@ video {
 .text-secondary-dark {
   --tw-text-opacity: 1;
   color: rgb(239 65 55 / var(--tw-text-opacity, 1));
+}
+
+.text-primary-light {
+  --tw-text-opacity: 1;
+  color: rgb(0 174 239 / var(--tw-text-opacity, 1));
 }
 
 .underline {
