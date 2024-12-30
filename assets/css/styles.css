@@ -1563,6 +1563,11 @@ video {
   background-color: rgb(0 4 55 / 0.85);
 }
 
+.bg-accent-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 54 111 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
