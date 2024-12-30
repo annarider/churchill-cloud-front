@@ -1660,6 +1660,16 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #000437 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
+.via-secondary {
+  --tw-gradient-to: rgb(251 176 64 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #FBB040 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-accent {
+  --tw-gradient-to: rgb(0 176 163 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #00B0A3 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .to-accent-dark {
   --tw-gradient-to: #00366F var(--tw-gradient-to-position);
 }
@@ -1686,6 +1696,10 @@ video {
 
 .to-\[\#1a2236\] {
   --tw-gradient-to: #1a2236 var(--tw-gradient-to-position);
+}
+
+.to-primary-light {
+  --tw-gradient-to: #00AEEF var(--tw-gradient-to-position);
 }
 
 .decoration-slice {
@@ -2155,6 +2169,10 @@ video {
   color: rgb(0 176 163 / 0.8);
 }
 
+.text-white\/90 {
+  color: rgb(255 255 255 / 0.9);
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2384,6 +2402,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:brightness-110:hover {
   --tw-brightness: brightness(1.1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -2435,8 +2459,17 @@ video {
   --tw-ring-color: rgb(251 176 64 / var(--tw-ring-opacity, 1));
 }
 
+.focus\:ring-secondary-light:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1));
+}
+
 .focus\:ring-offset-2:focus {
   --tw-ring-offset-width: 2px;
+}
+
+.focus\:ring-offset-primary:focus {
+  --tw-ring-offset-color: #005CAB;
 }
 
 .focus-visible\:outline:focus-visible {
