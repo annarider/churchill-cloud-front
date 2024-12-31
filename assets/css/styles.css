@@ -1503,6 +1503,11 @@ video {
   border-color: rgb(0 54 111 / 0.7);
 }
 
+.border-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 176 64 / var(--tw-border-opacity, 1));
+}
+
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1603,6 +1608,10 @@ video {
 .bg-primary-light {
   --tw-bg-opacity: 1;
   background-color: rgb(0 174 239 / var(--tw-bg-opacity, 1));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-gradient-to-b {
@@ -2411,6 +2420,10 @@ video {
 .hover\:bg-primary-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 174 239 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-secondary\/10:hover {
+  background-color: rgb(251 176 64 / 0.1);
 }
 
 .hover\:text-black:hover {
