@@ -1917,6 +1917,10 @@ video {
   padding-top: 6rem;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2721,6 +2725,11 @@ video {
     padding-bottom: 5rem;
   }
 
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -2731,6 +2740,10 @@ video {
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:pr-7 {
+    padding-right: 1.75rem;
   }
 
   .md\:text-3xl {
