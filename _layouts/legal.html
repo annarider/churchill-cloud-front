@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{ page.title }}
+      - Churchill Cloud
+    </title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    {% if page.additional_css %} {{ page.additional_css }} {% endif %}
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+    {% if page.additional_js %}
+      {{ page.additional_js }}
+    {% endif %}
+    <script src="{{ site.baseurl }}/assets/js/nav.js"></script>
+  </body>
+</html>
