@@ -1462,6 +1462,14 @@ video {
   border-color: rgb(0 174 239 / 0.1);
 }
 
+.border-primary-light\/30 {
+  border-color: rgb(0 174 239 / 0.3);
+}
+
+.border-primary-light\/50 {
+  border-color: rgb(0 174 239 / 0.5);
+}
+
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
