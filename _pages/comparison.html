@@ -4,17 +4,6 @@ title: Comparison
 permalink: /comparison/
 ---
 <div class="bg-white">
-  <!-- Hero Section -->
-  <div class="bg-gradient-to-b from-secondary-light to-primary-light/5 px-4 py-16 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl text-center">
-      <h1 class="text-3xl font-bold tracking-tight text-primary-dark sm:text-4xl lg:text-5xl">
-        Churchill Cloud vs. Big Tech
-      </h1>
-      <p class="mt-4 text-lg text-neutral/90">Who Really Owns Your Data?</p>
-    </div>
-  </div>
-
-  <!-- Infrastructure Comparison -->
   <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="overflow-x-auto">
       <table class="min-w-full divide-y divide-primary/10">
@@ -40,7 +29,7 @@ permalink: /comparison/
           </tr>
         </thead>
         <tbody class="divide-y divide-primary/5">
-          <!-- Data Center Ownership -->
+          <!-- Full Data Center Ownership -->
           <tr class="hover:bg-primary-light/5">
             <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
               Full Data Center Ownership
@@ -63,6 +52,122 @@ permalink: /comparison/
             <td class="px-3 py-4 text-center text-sm">
               <span class="text-secondary-dark">No</span>
               <div class="mt-1 text-xs text-neutral/75">Operates in multi-tenant colocation centers</div>
+            </td>
+          </tr>
+
+          <!-- End-to-End Software Control -->
+          <tr class="hover:bg-primary-light/5">
+            <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+              End-to-End Software Control
+              <div class="mt-1 text-xs font-normal text-neutral/75">
+                Is the software stack fully owned and controlled?
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-accent-light">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                All software is developed, maintained, and controlled by Churchill Cloud
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">No</span>
+              <div class="mt-1 text-xs text-neutral/75">AWS integrates third-party services</div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">No</span>
+              <div class="mt-1 text-xs text-neutral/75">Google Cloud runs external AI/ML services</div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">No</span>
+              <div class="mt-1 text-xs text-neutral/75">Microsoft Azure relies on vendor-driven integrations</div>
+            </td>
+          </tr>
+
+          <!-- Zero-Knowledge Encryption -->
+          <tr class="hover:bg-primary-light/5">
+            <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+              Zero-Knowledge Encryption
+              <div class="mt-1 text-xs font-normal text-neutral/75">Does the provider retain access to user data?</div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-accent-light">No</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                Only the user holds encryption keys; Churchill Cloud cannot decrypt data
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                AWS manages keys by default unless users configure external KMS
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">Google Cloud retains metadata and operational access</div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                Microsoft Key Vault can decrypt data for compliance reasons
+              </div>
+            </td>
+          </tr>
+
+          <!-- No Shared Infrastructure -->
+          <tr class="hover:bg-primary-light/5">
+            <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+              No Shared Infrastructure
+              <div class="mt-1 text-xs font-normal text-neutral/75">
+                Does the provider host data in shared environments?
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-accent-light">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                Churchill Cloud does not share data center space with third parties
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">No</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                AWS hosts data in colocation data centers with other tenants
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">No</span>
+              <div class="mt-1 text-xs text-neutral/75">Google Cloud collocates in third-party facilities</div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">No</span>
+              <div class="mt-1 text-xs text-neutral/75">Microsoft operates shared facilities in various regions</div>
+            </td>
+          </tr>
+
+          <!-- Government Compliance & Data Requests -->
+          <tr class="hover:bg-primary-light/5">
+            <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+              Government Compliance & Data Requests
+              <div class="mt-1 text-xs font-normal text-neutral/75">Can governments force access to data?</div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-accent-light">No</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                Churchill Cloud cannot comply because it lacks decryption access
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">AWS must comply with U.S. and international data laws</div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">
+                Google complies with the U.S. CLOUD Act and foreign governments
+              </div>
+            </td>
+            <td class="px-3 py-4 text-center text-sm">
+              <span class="text-secondary-dark">Yes</span>
+              <div class="mt-1 text-xs text-neutral/75">Microsoft responds to global government data requests</div>
             </td>
           </tr>
         </tbody>
