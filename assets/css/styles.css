@@ -854,6 +854,10 @@ video {
   margin-top: auto;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1525,6 +1529,10 @@ video {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-secondary\/10 {
+  background-color: rgb(251 176 64 / 0.1);
 }
 
 .bg-gradient-to-b {
