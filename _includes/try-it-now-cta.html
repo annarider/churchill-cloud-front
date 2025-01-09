@@ -1,34 +1,19 @@
 <!-- Focus Feature Callout Trial credit -->
 <section class="w-full bg-white pb-32 pt-24">
   <div class="relative mx-auto max-w-7xl px-4 md:px-12">
-    <div
-      class="
-        /* Reduced padding for mobile, maintain larger padding for bigger screens
-        */ relative grid grid-cols-1 items-center gap-10 overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-accent to-primary-light
-        p-6 md:grid-cols-5 md:p-16 lg:gap-0 lg:p-20 xl:p-24
-      "
-    >
-      <!-- Decorative SVG - Top Right -->
-      <div class="absolute right-0 top-0">
-        <svg class="h-full w-full object-cover" viewBox="0 0 487 487" xmlns="http://www.w3.org/2000/svg">
-          <path d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z" fill="#FFF" fill-opacity=".1" fill-rule="nonzero"/>
-        </svg>
-      </div>
-
-      <!-- Decorative SVG - Bottom Left -->
-      <div class="absolute bottom-0 left-0 h-full">
-        <svg class="h-full w-auto object-cover opacity-75" viewBox="0 0 487 487" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z" fill="#FFF" fill-opacity=".1" fill-rule="nonzero"/>
-        </svg>
-      </div>
-
-      {% include tagline.html %}
-
+    <div class="relative grid grid-cols-1 items-center gap-10 overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-accent to-primary-light p-6 md:grid-cols-5 md:p-16 lg:p-20 xl:p-24">
       <!-- Content -->
-      <div class="relative z-30 col-span-1 md:col-span-3">
+      <div class="relative z-10 col-span-1 md:col-span-3">
+        <!-- Tagline -->
+        <div class="mb-4 md:mb-8">
+          <h3 class="text-xl font-bold text-secondary lg:text-2xl">Privacy is a Right, Not a Feature</h3>
+          <p class="mt-2 text-base text-white/90">No surveillance. No tracking. No compromises.</p>
+        </div>
+
         <h2 class="mb-1 text-3xl font-bold leading-tight text-white md:mb-3 md:text-3xl lg:text-4xl xl:text-5xl">
           <span class="block lg:mt-3">Try us risk-free</span>
         </h2>
+
         <p class="my-6 max-w-sm pr-0 text-base font-normal text-white/90 md:pr-7 lg:pr-0 lg:text-xl xl:max-w-lg">
           Are you ready to make the move? Apply for a $200 credit and tell us your story.
         </p>
@@ -41,13 +26,15 @@
         </a>
       </div>
 
-      <!-- Image -->
-      <div class="col-span-1 flex h-full items-center md:col-span-2">
-        <img
-          src="{% if page.cta_image %}{{ page.cta_image }}{% else %}{{ '/assets/images/console-light.webp' | relative_url }}{% endif %}"
-          alt="Dashboard preview"
-          class="relative right-0 top-0 -mr-1 w-full max-w-none rounded object-cover md:w-auto md:max-w-sm lg:absolute lg:mt-9 lg:max-w-md xl:max-w-lg"
-        >
+      <!-- Image container -->
+      <div class="relative col-span-1 md:col-span-2">
+        <div class="lg:relative lg:right-0 lg:h-full">
+          <img
+            src="{% if page.cta_image %}{{ page.cta_image }}{% else %}{{ '/assets/images/console-light.webp' | relative_url }}{% endif %}"
+            alt="Dashboard preview"
+            class="w-full max-w-none rounded object-cover md:w-auto md:max-w-sm lg:max-w-md xl:max-w-lg"
+          >
+        </div>
       </div>
     </div>
   </div>
