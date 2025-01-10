@@ -4,224 +4,222 @@ title: Comparison
 permalink: /comparison/
 ---
 <div class="bg-white">
-  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
+    <div class="mx-auto mb-12 max-w-4xl space-y-6 text-center">
+      <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud vs. Big Tech Comparison</h2>
+      <p class="text-4xl font-bold tracking-tight text-neutral sm:text-5xl">Who Really Owns Your Data?</p>
+      <p class="mx-auto max-w-2xl text-lg leading-8 text-neutral/90">
+        See how Churchill Cloud's true data ownership compares to traditional cloud providers
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Infrastructure comparison table -->
 
-    <!-- Intro -->
-    <section>
-      <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-4xl text-center">
-            <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud vs. Big Tech Comparison</h2>
-            <p class="mt-2 text-4xl font-bold tracking-tight text-neutral sm:text-5xl">Who Really Owns Your Data?</p>
-          </div>
-      
-          <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-neutral/90">
-            See how Churchill Cloud's true data ownership compares to traditional cloud providers
-          </p>
-    </section>
-    <!-- Infrastructure comparison table -->
-    <section>
+<div class="overflow-x-auto">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <table class="min-w-full divide-y divide-primary/10">
+      <thead>
+        <tr class="text-left">
+          <th class="min-w-[200px] py-3.5 pl-4 pr-3 text-sm font-semibold text-neutral sm:pl-0">Feature</th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            Churchill Cloud
+            <span class="block text-accent-light">✓</span>
+          </th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            AWS
+            <span class="block text-secondary-dark">⚠️</span>
+          </th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            Google Cloud
+            <span class="block text-secondary-dark">⚠️</span>
+          </th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            Microsoft Azure
+            <span class="block text-secondary-dark">⚠️</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-primary/5">
+        <!-- Full Data Center Ownership -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            Full Data Center Ownership
+            <div class="mt-1 text-xs font-normal text-neutral/75">
+              Does the provider own and operate every data center?
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Churchill Cloud owns all physical infrastructure</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Uses leased space in third-party facilities</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Uses leased and third-party facilities</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Operates in multi-tenant colocation centers</div>
+          </td>
+        </tr>
+
+        <!-- End-to-End Software Control -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            End-to-End Software Control
+            <div class="mt-1 text-xs font-normal text-neutral/75">
+              Is the software stack fully owned and controlled?
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              All software is developed, maintained, and controlled by Churchill Cloud
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">AWS integrates third-party services</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Google Cloud runs external AI/ML services</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft Azure relies on vendor-driven integrations</div>
+          </td>
+        </tr>
+
+        <!-- Zero-Knowledge Encryption -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            Zero-Knowledge Encryption
+            <div class="mt-1 text-xs font-normal text-neutral/75">Does the provider retain access to user data?</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">No</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Only the user holds encryption keys; Churchill Cloud cannot decrypt data
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              AWS manages keys by default unless users configure external KMS
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Google Cloud retains metadata and operational access</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft Key Vault can decrypt data for compliance reasons</div>
+          </td>
+        </tr>
+
+        <!-- No Shared Infrastructure -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            No Shared Infrastructure
+            <div class="mt-1 text-xs font-normal text-neutral/75">
+              Does the provider host data in shared environments?
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Churchill Cloud does not share data center space with third parties
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">AWS hosts data in colocation data centers with other tenants</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Google Cloud collocates in third-party facilities</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft operates shared facilities in various regions</div>
+          </td>
+        </tr>
+
+        <!-- Government Compliance & Data Requests -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            Government Compliance & Data Requests
+            <div class="mt-1 text-xs font-normal text-neutral/75">Can governments force access to data?</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">No</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Churchill Cloud cannot comply because it lacks decryption access
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">AWS must comply with U.S. and international data laws</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Google complies with the U.S. CLOUD Act and foreign governments
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft responds to global government data requests</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Sources Section from Infrastructure Comparison -->
+<div class="mx-auto max-w-3xl px-6 py-16">
+  <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
+  <div class="space-y-3 text-sm leading-6 text-neutral/80">
+    <p>
+      <span class="font-semibold text-neutral">AWS Data Center Ownership:</span> AWS operates owned and leased data
+      centers, including colocation facilities.
+    </p>
+    <p>
+      <span class="font-semibold text-neutral">Google Cloud Colocation:</span> Google Cloud leases space in third-party
+      facilities for interconnectivity.
+    </p>
+    <p>
+      <span class="font-semibold text-neutral"> Microsoft Azure Shared Infrastructure:</span> Microsoft operates
+      colocation data centers where customers share physical space.
+    </p>
+    <p>
+      <span class="font-semibold text-neutral">AWS, Google, and Microsoft Compliance with Government Requests:</span>
+      All must comply
+    </p>
+  </div>
+</div>
+
+<!-- Data Integrity comparison table -->
+<div class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 py-4 lg:px-4">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud vs. Big Tech</h2>
+      <p class="mt-2 text-4xl font-bold tracking-tight text-neutral sm:text-5xl">The Battle for Truth</p>
+    </div>
+
+    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-neutral/90">
+      How your data integrity is maintained across different cloud providers
+    </p>
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="overflow-x-auto">
-        <table class="min-w-full divide-y divide-primary/10">
-          <thead>
-            <tr class="text-left">
-              <th class="min-w-[200px] py-3.5 pl-4 pr-3 text-sm font-semibold text-neutral sm:pl-0">Feature</th>
-              <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
-                Churchill Cloud
-                <span class="block text-accent-light">✓</span>
-              </th>
-              <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
-                AWS
-                <span class="block text-secondary-dark">⚠️</span>
-              </th>
-              <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
-                Google Cloud
-                <span class="block text-secondary-dark">⚠️</span>
-              </th>
-              <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
-                Microsoft Azure
-                <span class="block text-secondary-dark">⚠️</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-primary/5">
-            <!-- Full Data Center Ownership -->
-            <tr class="hover:bg-primary-light/5">
-              <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
-                Full Data Center Ownership
-                <div class="mt-1 text-xs font-normal text-neutral/75">
-                  Does the provider own and operate every data center?
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-accent-light">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">Churchill Cloud owns all physical infrastructure</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">Uses leased space in third-party facilities</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">Uses leased and third-party facilities</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">Operates in multi-tenant colocation centers</div>
-              </td>
-            </tr>
-
-            <!-- End-to-End Software Control -->
-            <tr class="hover:bg-primary-light/5">
-              <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
-                End-to-End Software Control
-                <div class="mt-1 text-xs font-normal text-neutral/75">
-                  Is the software stack fully owned and controlled?
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-accent-light">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  All software is developed, maintained, and controlled by Churchill Cloud
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">AWS integrates third-party services</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">Google Cloud runs external AI/ML services</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">Microsoft Azure relies on vendor-driven integrations</div>
-              </td>
-            </tr>
-
-            <!-- Zero-Knowledge Encryption -->
-            <tr class="hover:bg-primary-light/5">
-              <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
-                Zero-Knowledge Encryption
-                <div class="mt-1 text-xs font-normal text-neutral/75">
-                  Does the provider retain access to user data?
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-accent-light">No</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  Only the user holds encryption keys; Churchill Cloud cannot decrypt data
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  AWS manages keys by default unless users configure external KMS
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">Google Cloud retains metadata and operational access</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  Microsoft Key Vault can decrypt data for compliance reasons
-                </div>
-              </td>
-            </tr>
-
-            <!-- No Shared Infrastructure -->
-            <tr class="hover:bg-primary-light/5">
-              <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
-                No Shared Infrastructure
-                <div class="mt-1 text-xs font-normal text-neutral/75">
-                  Does the provider host data in shared environments?
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-accent-light">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  Churchill Cloud does not share data center space with third parties
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  AWS hosts data in colocation data centers with other tenants
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">Google Cloud collocates in third-party facilities</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">No</span>
-                <div class="mt-1 text-xs text-neutral/75">Microsoft operates shared facilities in various regions</div>
-              </td>
-            </tr>
-
-            <!-- Government Compliance & Data Requests -->
-            <tr class="hover:bg-primary-light/5">
-              <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
-                Government Compliance & Data Requests
-                <div class="mt-1 text-xs font-normal text-neutral/75">Can governments force access to data?</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-accent-light">No</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  Churchill Cloud cannot comply because it lacks decryption access
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">AWS must comply with U.S. and international data laws</div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">
-                  Google complies with the U.S. CLOUD Act and foreign governments
-                </div>
-              </td>
-              <td class="px-3 py-4 text-center text-sm">
-                <span class="text-secondary-dark">Yes</span>
-                <div class="mt-1 text-xs text-neutral/75">Microsoft responds to global government data requests</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- Sources Section from Infrastructure Comparison -->
-        <div class="mx-auto max-w-3xl px-6 py-16">
-          <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
-          <div class="space-y-3 text-sm leading-6 text-neutral/80">
-            <p>
-              <span class="font-semibold text-neutral">AWS Data Center Ownership:</span> AWS operates owned and leased
-              data centers, including colocation facilities.
-            </p>
-            <p>
-              <span class="font-semibold text-neutral">Google Cloud Colocation:</span> Google Cloud leases space in
-              third-party facilities for interconnectivity.
-            </p>
-            <p>
-              <span class="font-semibold text-neutral"> Microsoft Azure Shared Infrastructure:</span> Microsoft operates
-              colocation data centers where customers share physical space.
-            </p>
-            <p>
-              <span class="font-semibold text-neutral"
-                >AWS, Google, and Microsoft Compliance with Government Requests:</span
-              >
-              All must comply
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Data Integrity comparison table -->
-    <div class="bg-white">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="overflow-x-auto">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <table class="min-w-full divide-y divide-primary/10">
             <thead>
               <tr class="text-left">
@@ -344,67 +342,63 @@ permalink: /comparison/
               </tr>
             </tbody>
           </table>
-          <!-- Sources Section -->
-          <div class="mx-auto max-w-3xl px-6 py-16">
-            <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
-            <div class="space-y-3 text-sm leading-6 text-neutral/80">
-              <p>
-                <span class="font-semibold text-neutral">AWS Data Modification Risks:</span> AWS allows admin-level log
-                modifications and retention policies, which could alter historical records.
-              </p>
-              <p>
-                <span class="font-semibold text-neutral">Google Cloud AI & Data Versioning:</span> Google uses AI-based
-                optimizations and versioning, allowing past data to be changed.
-              </p>
-              <p>
-                <span class="font-semibold text-neutral">Microsoft Azure AI Compliance:</span> Microsoft employs
-                AI-driven compliance tools that can modify, redact, or adapt stored data.
-              </p>
-            </div>
+        </div>
+
+        <!-- Sources Section -->
+        <div class="mx-auto max-w-3xl px-6 py-16">
+          <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
+          <div class="space-y-3 text-sm leading-6 text-neutral/80">
+            <p>
+              <span class="font-semibold text-neutral">AWS Data Modification Risks:</span> AWS allows admin-level log
+              modifications and retention policies, which could alter historical records.
+            </p>
+            <p>
+              <span class="font-semibold text-neutral">Google Cloud AI & Data Versioning:</span> Google uses AI-based
+              optimizations and versioning, allowing past data to be changed.
+            </p>
+            <p>
+              <span class="font-semibold text-neutral">Microsoft Azure AI Compliance:</span> Microsoft employs AI-driven
+              compliance tools that can modify, redact, or adapt stored data.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- CTA Section -->
-    <section class="bg-accent/40">
-      <!-- Truth Statement Section -->
-      <div class="px-6 py-24 sm:py-32">
-        <div class="mx-auto max-w-4xl text-center">
-          <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud</h2>
-          <h2 class="text-3xl font-bold tracking-tight text-primary-dark sm:text-4xl">
-            The Cloud Where Truth Stays True
-          </h2>
+  <!-- Truth Statement Section -->
+  <div class="px-6 py-12 sm:py-16">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-primary-dark sm:text-4xl">The Cloud Where Truth Stays True</h2>
 
-          <div class="mt-12 flex flex-col gap-6 text-lg text-neutral sm:text-xl">
-            <p class="flex items-center justify-center gap-2">
-              <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <span>Your records remain as you wrote—only you can change them.</span>
-            </p>
+      <div class="mt-12 flex flex-col gap-6 text-lg text-neutral sm:text-xl">
+        <p class="flex items-center justify-center gap-2">
+          <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+          </svg>
+          <span>Your records remain as you wrote—only you can change them.</span>
+        </p>
 
-            <p class="flex items-center justify-center gap-2">
-              <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <span>No AI interference, no silent compliance updates, no backend "optimizations."</span>
-            </p>
+        <p class="flex items-center justify-center gap-2">
+          <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+          </svg>
+          <span>No AI interference, no silent compliance updates, no backend "optimizations."</span>
+        </p>
 
-            <p class="flex items-center justify-center gap-2">
-              <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <span>A cloud where truth is preserved, not processed.</span>
-            </p>
-          </div>
-
-          <p class="mt-12 text-xl font-medium text-primary-dark">
-            The future is built on what we remember. Churchill Cloud ensures that what you write today is the same
-            tomorrow, next year, and beyond.
-          </p>
-        </div>
+        <p class="flex items-center justify-center gap-2">
+          <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+          </svg>
+          <span>A cloud where truth is preserved, not processed.</span>
+        </p>
       </div>
-    </section>
+
+      <p class="mt-12 text-xl font-medium text-primary-dark">
+        The future is built on what we remember. Churchill Cloud ensures that what you write today is the same tomorrow,
+        next year, and beyond.
+      </p>
+    </div>
   </div>
 </div>
