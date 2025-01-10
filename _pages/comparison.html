@@ -3,514 +3,402 @@ layout: default
 title: Comparison
 permalink: /comparison/
 ---
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl text-center">
+<div class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8">
+    <div class="mx-auto mb-12 max-w-4xl space-y-6 text-center">
       <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud vs. Big Tech Comparison</h2>
-      <p class="mt-2 text-4xl font-bold tracking-tight text-neutral sm:text-5xl">Who Really Owns Your Data?</p>
+      <p class="text-4xl font-bold tracking-tight text-neutral sm:text-5xl">Who Really Owns Your Data?</p>
+      <p class="mx-auto max-w-2xl text-lg leading-8 text-neutral/90">
+        See how Churchill Cloud's true data ownership compares to traditional cloud providers
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Infrastructure comparison table -->
+
+<div class="overflow-x-auto">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <table class="min-w-full divide-y divide-primary/10">
+      <thead>
+        <tr class="text-left">
+          <th class="min-w-[200px] py-3.5 pl-4 pr-3 text-sm font-semibold text-neutral sm:pl-0">Feature</th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            Churchill Cloud
+            <span class="block text-accent-light">✓</span>
+          </th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            AWS
+            <span class="block text-secondary-dark">⚠️</span>
+          </th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            Google Cloud
+            <span class="block text-secondary-dark">⚠️</span>
+          </th>
+          <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+            Microsoft Azure
+            <span class="block text-secondary-dark">⚠️</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-primary/5">
+        <!-- Full Data Center Ownership -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            Full Data Center Ownership
+            <div class="mt-1 text-xs font-normal text-neutral/75">
+              Does the provider own and operate every data center?
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Churchill Cloud owns all physical infrastructure</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Uses leased space in third-party facilities</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Uses leased and third-party facilities</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Operates in multi-tenant colocation centers</div>
+          </td>
+        </tr>
+
+        <!-- End-to-End Software Control -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            End-to-End Software Control
+            <div class="mt-1 text-xs font-normal text-neutral/75">
+              Is the software stack fully owned and controlled?
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              All software is developed, maintained, and controlled by Churchill Cloud
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">AWS integrates third-party services</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Google Cloud runs external AI/ML services</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft Azure relies on vendor-driven integrations</div>
+          </td>
+        </tr>
+
+        <!-- Zero-Knowledge Encryption -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            Zero-Knowledge Encryption
+            <div class="mt-1 text-xs font-normal text-neutral/75">Does the provider retain access to user data?</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">No</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Only the user holds encryption keys; Churchill Cloud cannot decrypt data
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              AWS manages keys by default unless users configure external KMS
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Google Cloud retains metadata and operational access</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft Key Vault can decrypt data for compliance reasons</div>
+          </td>
+        </tr>
+
+        <!-- No Shared Infrastructure -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            No Shared Infrastructure
+            <div class="mt-1 text-xs font-normal text-neutral/75">
+              Does the provider host data in shared environments?
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Churchill Cloud does not share data center space with third parties
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">AWS hosts data in colocation data centers with other tenants</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Google Cloud collocates in third-party facilities</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">No</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft operates shared facilities in various regions</div>
+          </td>
+        </tr>
+
+        <!-- Government Compliance & Data Requests -->
+        <tr class="hover:bg-primary-light/5">
+          <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+            Government Compliance & Data Requests
+            <div class="mt-1 text-xs font-normal text-neutral/75">Can governments force access to data?</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-accent-light">No</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Churchill Cloud cannot comply because it lacks decryption access
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">AWS must comply with U.S. and international data laws</div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">
+              Google complies with the U.S. CLOUD Act and foreign governments
+            </div>
+          </td>
+          <td class="px-3 py-4 text-center text-sm">
+            <span class="text-secondary-dark">Yes</span>
+            <div class="mt-1 text-xs text-neutral/75">Microsoft responds to global government data requests</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Sources Section from Infrastructure Comparison -->
+<div class="mx-auto max-w-3xl px-6 py-16">
+  <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
+  <div class="space-y-3 text-sm leading-6 text-neutral/80">
+    <p>
+      <span class="font-semibold text-neutral">AWS Data Center Ownership:</span> AWS operates owned and leased data
+      centers, including colocation facilities.
+    </p>
+    <p>
+      <span class="font-semibold text-neutral">Google Cloud Colocation:</span> Google Cloud leases space in third-party
+      facilities for interconnectivity.
+    </p>
+    <p>
+      <span class="font-semibold text-neutral"> Microsoft Azure Shared Infrastructure:</span> Microsoft operates
+      colocation data centers where customers share physical space.
+    </p>
+    <p>
+      <span class="font-semibold text-neutral">AWS, Google, and Microsoft Compliance with Government Requests:</span>
+      All must comply
+    </p>
+  </div>
+</div>
+
+<!-- Data Integrity comparison table -->
+<div class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 py-4 lg:px-4">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud vs. Big Tech</h2>
+      <p class="mt-2 text-4xl font-bold tracking-tight text-neutral sm:text-5xl">The Battle for Truth</p>
     </div>
 
     <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-neutral/90">
-      See how Churchill Cloud's true data ownership compares to traditional cloud providers
+      How your data integrity is maintained across different cloud providers
     </p>
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="overflow-x-auto">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <table class="min-w-full divide-y divide-primary/10">
+            <thead>
+              <tr class="text-left">
+                <th class="min-w-[200px] py-3.5 pl-4 pr-3 text-sm font-semibold text-neutral sm:pl-0">Feature</th>
+                <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+                  Churchill Cloud
+                  <span class="block text-accent-light">✓</span>
+                </th>
+                <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+                  AWS
+                  <span class="block text-secondary-dark">⚠️</span>
+                </th>
+                <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+                  Google Cloud
+                  <span class="block text-secondary-dark">⚠️</span>
+                </th>
+                <th class="px-3 py-3.5 text-center text-sm font-semibold text-neutral">
+                  Microsoft Azure
+                  <span class="block text-secondary-dark">⚠️</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-primary/5">
+              <!-- Immutable Data Integrity -->
+              <tr class="hover:bg-primary-light/5">
+                <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+                  Immutable Data Integrity
+                  <div class="mt-1 text-xs font-normal text-neutral/75">How are records maintained and protected?</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-accent-light">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">Records remain verifiable, unaltered</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">AWS logs and versions can be altered</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">Google allows data versioning & modifications</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">Microsoft AI-driven compliance tools can alter records</div>
+                </td>
+              </tr>
 
-    <!-- Cards Data Ownership comparison section -->
-    <section>
-      <!-- Begin Cards section -->
-      <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 md:max-w-none md:grid-cols-2 lg:grid-cols-4">
-        <!-- Churchill Card -->
-        <div class="rounded-2xl p-8 ring-1 ring-primary/10">
-          <h3 class="text-lg font-semibold leading-8 text-neutral">Churchill Cloud</h3>
-          <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <div>
-                <span class="font-medium">Full Data Center Ownership</span>
-                <p class="mt-1 text-xs text-neutral/75">Churchill Cloud owns all physical infrastructure</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <div>
-                <span class="font-medium">End-to-End Software Control</span>
-                <p class="mt-1 text-xs text-neutral/75">
-                  All software is developed, maintained, and controlled by Churchill Cloud
-                </p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <div>
-                <span class="font-medium">Zero-Knowledge Encryption</span>
-                <p class="mt-1 text-xs text-neutral/75">
-                  Only the user holds encryption keys; Churchill Cloud cannot decrypt data
-                </p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <div>
-                <span class="font-medium">No Shared Infrastructure</span>
-                <p class="mt-1 text-xs text-neutral/75">
-                  Churchill Cloud does not share data center space with third parties
-                </p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <div>
-                <span class="font-medium">Government Data Protection</span>
-                <p class="mt-1 text-xs text-neutral/75">
-                  Cannot comply with data requests due to lack of decryption access
-                </p>
-              </div>
-            </li>
-          </ul>
+              <!-- User-Only Control Over History -->
+              <tr class="hover:bg-primary-light/5">
+                <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+                  User-Only Control Over History
+                  <div class="mt-1 text-xs font-normal text-neutral/75">Who can modify historical records?</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-accent-light">Only the User</span>
+                  <div class="mt-1 text-xs text-neutral/75">No forced modifications</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Admins & AWS</span>
+                  <div class="mt-1 text-xs text-neutral/75">Data retention controlled by AWS</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Google & Third Parties</span>
+                  <div class="mt-1 text-xs text-neutral/75">AI can modify datasets</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Microsoft & Compliance Systems</span>
+                  <div class="mt-1 text-xs text-neutral/75">May enforce edits</div>
+                </td>
+              </tr>
+
+              <!-- No AI Data Processing Without Consent -->
+              <tr class="hover:bg-primary-light/5">
+                <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+                  No AI Data Processing Without Consent
+                  <div class="mt-1 text-xs font-normal text-neutral/75">
+                    Is data processed by AI without explicit consent?
+                  </div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-accent-light">No</span>
+                  <div class="mt-1 text-xs text-neutral/75">Does not process or scan data</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">AWS uses metadata for AI optimizations</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">Google AI optimizes stored data</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">Microsoft AI-driven compliance monitoring</div>
+                </td>
+              </tr>
+
+              <!-- Historical Transparency -->
+              <tr class="hover:bg-primary-light/5">
+                <td class="py-4 pl-4 pr-3 text-sm font-medium text-neutral sm:pl-0">
+                  Historical Transparency
+                  <div class="mt-1 text-xs font-normal text-neutral/75">Do records maintain their original state?</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-accent-light">Yes</span>
+                  <div class="mt-1 text-xs text-neutral/75">All records remain unchanged</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">No</span>
+                  <div class="mt-1 text-xs text-neutral/75">AWS logs can be changed by policies</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">No</span>
+                  <div class="mt-1 text-xs text-neutral/75">AI models can adjust past datasets</div>
+                </td>
+                <td class="px-3 py-4 text-center text-sm">
+                  <span class="text-secondary-dark">No</span>
+                  <div class="mt-1 text-xs text-neutral/75">Applies adaptive compliance measures</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- AWS Card -->
-        <div class="rounded-2xl p-8 ring-1 ring-primary/10">
-          <h3 class="text-lg font-semibold leading-8 text-neutral">AWS</h3>
-          <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Limited Data Center Control</span>
-                <p class="mt-1 text-xs text-neutral/75">AWS leases space in third-party colocation facilities</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Third-Party Dependencies</span>
-                <p class="mt-1 text-xs text-neutral/75">AWS integrates third-party services</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Key Management Access</span>
-                <p class="mt-1 text-xs text-neutral/75">
-                  AWS manages keys by default unless users configure external KMS
-                </p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Shared Infrastructure</span>
-                <p class="mt-1 text-xs text-neutral/75">Hosts data in colocation data centers with other tenants</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Government Data Access</span>
-                <p class="mt-1 text-xs text-neutral/75">Must comply with U.S. and international data laws</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Google Cloud Card -->
-        <div class="rounded-2xl p-8 ring-1 ring-primary/10">
-          <h3 class="text-lg font-semibold leading-8 text-neutral">Google Cloud</h3>
-          <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Limited Data Center Control</span>
-                <p class="mt-1 text-xs text-neutral/75">Uses leased and third-party facilities</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">External AI/ML Services</span>
-                <p class="mt-1 text-xs text-neutral/75">Runs external AI/ML services</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Data Access</span>
-                <p class="mt-1 text-xs text-neutral/75">Google Cloud retains metadata and operational access</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Shared Infrastructure</span>
-                <p class="mt-1 text-xs text-neutral/75">Google Cloud collocates in third-party facilities</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Government Compliance</span>
-                <p class="mt-1 text-xs text-neutral/75">Complies with the U.S. CLOUD Act and foreign governments</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Azure Card -->
-        <div class="rounded-2xl p-8 ring-1 ring-primary/10">
-          <h3 class="text-lg font-semibold leading-8 text-neutral">Azure</h3>
-          <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Multi-Tenant Infrastructure</span>
-                <p class="mt-1 text-xs text-neutral/75">Operates in multi-tenant colocation centers</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Vendor Dependencies</span>
-                <p class="mt-1 text-xs text-neutral/75">Relies on vendor-driven integrations</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Key Vault Access</span>
-                <p class="mt-1 text-xs text-neutral/75">Microsoft Key Vault can decrypt data for compliance reasons</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Shared Facilities</span>
-                <p class="mt-1 text-xs text-neutral/75">Microsoft operates shared facilities in various regions</p>
-              </div>
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-              <div>
-                <span class="font-medium">Government Data Access</span>
-                <p class="mt-1 text-xs text-neutral/75">Responds to global government data requests</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Sources Section from Infrastructure Comparison -->
-      <div class="mx-auto max-w-3xl px-6 py-16">
-        <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
-        <div class="space-y-3 text-sm leading-6 text-neutral/80">
-          <p>
-            <span class="font-semibold text-neutral">AWS Data Center Ownership:</span> AWS operates owned and leased
-            data centers, including colocation facilities.
-          </p>
-          <p>
-            <span class="font-semibold text-neutral">Google Cloud Colocation:</span> Google Cloud leases space in
-            third-party facilities for interconnectivity.
-          </p>
-          <p>
-            <span class="font-semibold text-neutral"> Microsoft Azure Shared Infrastructure:</span> Microsoft operates
-            colocation data centers where customers share physical space.
-          </p>
-          <p>
-            <span class="font-semibold text-neutral"
-              >AWS, Google, and Microsoft Compliance with Government Requests:</span
-            >
-            All must comply
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Data Integrity section -->
-    <section>
-      <div class="bg-gradient-to-b from-secondary-light to-accent/10">
-        <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div class="mx-auto max-w-4xl text-center">
-            <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud vs. Big Tech</h2>
-            <p class="mt-2 text-4xl font-bold tracking-tight text-neutral sm:text-5xl">The Battle for Truth</p>
-          </div>
-
-          <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-neutral/90">
-            How your data integrity is maintained across different cloud providers
-          </p>
-
-          <!-- Begin Cards -->
-          <!-- Cards Data Truth comparison section -->
-          <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-8 md:max-w-none md:grid-cols-2 lg:grid-cols-4">
-            <!-- Churchill Card -->
-            <div class="rounded-2xl bg-white p-8 ring-1 ring-primary/10">
-              <h3 class="text-lg font-semibold leading-8 text-neutral">Churchill Cloud</h3>
-              <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Immutable Data Integrity</span>
-                    <p class="mt-1 text-xs text-neutral/75">Records remain verifiable, unaltered</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">User-Only Control</span>
-                    <p class="mt-1 text-xs text-neutral/75">No forced modifications</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">No AI Processing</span>
-                    <p class="mt-1 text-xs text-neutral/75">Does not process or scan data</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Historical Transparency</span>
-                    <p class="mt-1 text-xs text-neutral/75">All records remain unchanged</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <!-- AWS Card -->
-            <div class="rounded-2xl bg-white p-8 ring-1 ring-primary/10">
-              <h3 class="text-lg font-semibold leading-8 text-neutral">AWS</h3>
-              <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Admin Data Access</span>
-                    <p class="mt-1 text-xs text-neutral/75">AWS logs and versions can be altered</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">AWS Control</span>
-                    <p class="mt-1 text-xs text-neutral/75">Data retention controlled by AWS</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">AI Optimizations</span>
-                    <p class="mt-1 text-xs text-neutral/75">Uses metadata for AI optimizations</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Policy Changes</span>
-                    <p class="mt-1 text-xs text-neutral/75">AWS logs can be changed by policies</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Google Cloud Card -->
-            <div class="rounded-2xl bg-white p-8 ring-1 ring-primary/10">
-              <h3 class="text-lg font-semibold leading-8 text-neutral">Google Cloud</h3>
-              <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Data Versioning</span>
-                    <p class="mt-1 text-xs text-neutral/75">Google allows data versioning & modifications</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Third-Party Access</span>
-                    <p class="mt-1 text-xs text-neutral/75">AI can modify datasets</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">AI Processing</span>
-                    <p class="mt-1 text-xs text-neutral/75">Google AI optimizes stored data</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Historical Modifications</span>
-                    <p class="mt-1 text-xs text-neutral/75">AI models can adjust past datasets</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Azure Card -->
-            <div class="rounded-2xl bg-white p-8 ring-1 ring-primary/10">
-              <h3 class="text-lg font-semibold leading-8 text-neutral">Azure</h3>
-              <ul class="mt-8 space-y-3 text-sm leading-6 text-neutral/90">
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">AI Compliance Tools</span>
-                    <p class="mt-1 text-xs text-neutral/75">Microsoft AI-driven compliance tools can alter records</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Compliance Systems</span>
-                    <p class="mt-1 text-xs text-neutral/75">May enforce edits</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">AI Monitoring</span>
-                    <p class="mt-1 text-xs text-neutral/75">Microsoft AI-driven compliance monitoring</p>
-                  </div>
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-secondary-dark" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                  </svg>
-                  <div>
-                    <span class="font-medium">Adaptive Compliance</span>
-                    <p class="mt-1 text-xs text-neutral/75">Applies adaptive compliance measures</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Sources Data Integrity Section -->
-          <div class="mx-auto max-w-3xl px-6 py-16">
-            <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
-            <div class="space-y-3 text-sm leading-6 text-neutral/80">
-              <p>
-                <span class="font-semibold text-neutral">AWS Data Modification Risks:</span> AWS allows admin-level log
-                modifications and retention policies, which could alter historical records.
-              </p>
-              <p>
-                <span class="font-semibold text-neutral">Google Cloud AI & Data Versioning:</span> Google uses AI-based
-                optimizations and versioning, allowing past data to be changed.
-              </p>
-              <p>
-                <span class="font-semibold text-neutral">Microsoft Azure AI Compliance:</span> Microsoft employs
-                AI-driven compliance tools that can modify, redact, or adapt stored data.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Data Truth Section -->
-    <section>
-      <!-- Truth Statement Section -->
-      <div class="bg-gradient-to-b from-accent/10 to-secondary-light px-6 py-24 sm:py-32">
-        <div class="mx-auto max-w-4xl text-center">
-          <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud</h2>
-          <h2 class="text-3xl font-bold tracking-tight text-primary-dark sm:text-4xl">
-            The Cloud Where Truth Stays True
-          </h2>
-
-          <div class="mt-12 flex flex-col gap-6 text-lg text-neutral sm:text-xl">
-            <p class="flex items-center justify-center gap-2">
-              <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <span>Your records remain as you wrote—only you can change them.</span>
+        <!-- Sources Section -->
+        <div class="mx-auto max-w-3xl px-6 py-16">
+          <h3 class="mb-4 text-sm font-medium text-neutral/60">Sources</h3>
+          <div class="space-y-3 text-sm leading-6 text-neutral/80">
+            <p>
+              <span class="font-semibold text-neutral">AWS Data Modification Risks:</span> AWS allows admin-level log
+              modifications and retention policies, which could alter historical records.
             </p>
-
-            <p class="flex items-center justify-center gap-2">
-              <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <span>No AI interference, no silent compliance updates, no backend "optimizations."</span>
+            <p>
+              <span class="font-semibold text-neutral">Google Cloud AI & Data Versioning:</span> Google uses AI-based
+              optimizations and versioning, allowing past data to be changed.
             </p>
-
-            <p class="flex items-center justify-center gap-2">
-              <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              <span>A cloud where truth is preserved, not processed.</span>
+            <p>
+              <span class="font-semibold text-neutral">Microsoft Azure AI Compliance:</span> Microsoft employs AI-driven
+              compliance tools that can modify, redact, or adapt stored data.
             </p>
           </div>
-
-          <p class="mt-12 text-xl font-medium text-primary-dark">
-            The future is built on what we remember. Churchill Cloud ensures that what you write today is the same
-            tomorrow, next year, and beyond.
-          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <!-- Truth Statement Section -->
+  <div class="px-6 py-12 sm:py-16">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-primary">Churchill Cloud</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-primary-dark sm:text-4xl">The Cloud Where Truth Stays True</h2>
+
+      <div class="mt-12 flex flex-col gap-6 text-lg text-neutral sm:text-xl">
+        <p class="flex items-center justify-center gap-2">
+          <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+          </svg>
+          <span>Your records remain as you wrote—only you can change them.</span>
+        </p>
+
+        <p class="flex items-center justify-center gap-2">
+          <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+          </svg>
+          <span>No AI interference, no silent compliance updates, no backend "optimizations."</span>
+        </p>
+
+        <p class="flex items-center justify-center gap-2">
+          <svg class="h-6 w-6 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+          </svg>
+          <span>A cloud where truth is preserved, not processed.</span>
+        </p>
+      </div>
+
+      <p class="mt-12 text-xl font-medium text-primary-dark">
+        The future is built on what we remember. Churchill Cloud ensures that what you write today is the same tomorrow,
+        next year, and beyond.
+      </p>
+    </div>
   </div>
 </div>
