@@ -1,0 +1,27 @@
+<section class="mx-auto max-w-6xl px-4 py-12">
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+    {% if site.data.marketplace_logos %}
+      <p>Data is available</p>
+    {% else %}
+      <p>No data found</p>
+    {% endif %}
+    {% for logo in site.data.marketplace_logos %}
+      <div class="relative aspect-square w-full">
+        <p>teest me</p>
+        <div class="absolute inset-0 m-4 flex items-center justify-center">
+          {% comment %}
+            The inner container uses dynamic classes from our data file
+            while maintaining consistent base styling
+          {% endcomment %}
+          <img
+            src="{{ logo.file | relative_url }}"
+            alt="{{ logo.alt }}"
+            class="max-h-full max-w-full object-contain {{ logo.size_class }}"
+          >
+        </div>
+        <h3 class="mt-4 text-xl font-semibold text-white">{{ logo.name }}</h3>
+        <p class="mt-2 text-gray-400">{{ logo.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
