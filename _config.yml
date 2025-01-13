@@ -27,7 +27,11 @@ collections:
 
 # Include/Exclude settings
 include:
+  - ./_data
+  - ./_includes
+  - ./_layouts
   - ./_pages
+  - ./assets
 
 # Directory settings
 source: .

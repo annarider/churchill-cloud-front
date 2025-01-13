@@ -1,35 +1,35 @@
 - name: PostgreSQL
   description: Advanced open source database with robust features for complex queries and data integrity.
-  file: postgresql-logo.svg
+  file: postgresql_logo.svg
   alt: PostgreSQL Database elephant logo
   size_class: pr-2 # Custom padding for aspect ratio adjustment
 
 - name: MySQL
   description: World's most popular open source database, perfect for web applications and cloud-native development.
-  file: mysql-logo.svg
+  file: mysql_logo.svg
   alt: MySQL Database dolphin logo
   size_class: pr-2 # Custom padding for aspect ratio adjustment
 
 - name: MariaDB
   description: Enhanced MySQL fork with improved performance, more storage engines, and enterprise features.
-  file: mariadb-logo.svg
+  file: mariadb_logo.svg
   alt: MariaDB Database seal logo
   size_class: px-4 # Different padding for wider logos
 
 - name: LAMP Stack
   description: Complete web development solution combining Linux, Apache, MySQL/MariaDB, and PHP/Python/Perl.
-  file: lamp-logo.svg
+  file: lamp_logo.svg
   alt: LAMP Stack flame logo
   size_class: pr-2 # Custom padding for aspect ratio adjustment
 
 - name: Jitsi Meet
   description: Secure, flexible open source video conferencing with screen sharing and chat features.
-  file: jitsi-logo.svg
+  file: jitsi_logo.svg
   alt: Jitsi Meet logo
   size_class: pr-2 # Custom padding for aspect ratio adjustment
 
 - name: OwnCloud
   description: Self-hosted file sync and share solution for complete control over your data.
-  file: owncloud-logo.svg
+  file: owncloud_logo.svg
   alt: Own Cloud logo
   size_class: pr-2 # Custom padding for aspect ratio adjustment
