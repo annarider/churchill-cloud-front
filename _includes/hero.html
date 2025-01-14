@@ -3,7 +3,8 @@
 {% assign subtitle = include.subtitle | default: null %}
 {% assign description = include.description | default: null %}
 {% assign cta_text = include.cta_text | default: null %}
-{% assign cta_link = include.cta_link | default: null %}
+{% assign button_text = include.button_text | default: null %}
+{% assign button_link = include.button_link | default: null %}
 {% assign show_stats = include.show_stats | default: false %}
 
 <!-- _includes/hero.html -->
@@ -29,15 +30,18 @@
           </p>
         {% endif %}
 
-        {% if cta_text and cta_link %}
+        {% if button_text and button_link %}
           <div class="mx-auto mt-8 w-full max-w-lg shadow-lg lg:mx-0">
+            <p class="mx-auto mb-6 max-w-md text-center text-lg text-secondary-light/90 lg:mx-0 lg:text-left">
+              {{ cta_text }}
+            </p>
             <div class="flex justify-center lg:justify-start">
               <a
-                href="{{ cta_link }}"
+                href="{{ button_link }}"
                 class="transform rounded-lg bg-secondary px-6 py-3 text-lg font-bold text-primary-dark shadow-lg transition-all duration-200 hover:shadow-xl hover:brightness-110"
-                aria-label="{{ cta_text }}"
+                aria-label="{{ button_text }}"
               >
-                {{ cta_text }}
+                {{ button_text }}
               </a>
             </div>
           </div>
